@@ -82,13 +82,24 @@ label {
   display: flex;
   flex-direction: column;
   width: 100%;
+  
 }
 
-label span {
+.container_span {
+  display: flex;
+  justify-content: space-between;
+  
   margin-bottom: 10px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
-input {
+.error {
+  color: hsl(4, 100%, 67%);
+}
+
+.email {
   height: 50px;
   width: 100%;
   border-radius: 10px;
@@ -97,7 +108,22 @@ input {
   padding-left: 15px;
 }
 
-input:focus {
+.email:focus {
+  outline: none;
+} 
+
+.email_error {
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid hsl(4, 100%, 67%);
+  background-color: hsl(4, 100%, 95%);
+  
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.email_error:focus {
   outline: none;
 } 
 
