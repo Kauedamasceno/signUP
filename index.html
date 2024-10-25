@@ -1,122 +1,123 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="style.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="style.css" />
 
-    <title>Newsletter sign-up form with success message</title>
+        <title>Newsletter sign-up form with success message</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  </head>
-  <body>
-    <div class="invisible" id="popup">
-      <div class="content_succes">
-        <i class="bi bi-check-circle-fill"
-        ><svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-check-circle-fill"
-          viewBox="0 0 16 16"
-          style="color: red"
-        >
-          <path
-            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-          /></svg
-      ></i>
-      <h1>Thanks for subscribing!</h1>
-      <p>
-        A confirmation email has been sent to <b id="email-adress"></b>. Please
-        open it and click the button inside to confirm your subscription
-      </p>
-      </div>
-      <button id="button_back">Dismis message</button>
-    </div>
-    <div class="container">
-      <form class="form">
-        <h1>Stay updated!</h1>
-        <p>Join 60,000+ pdroduct managers monthly updates on</p>
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    </head>
+    <body>
+        <div class="invisible" id="popup">
+            <div class="content_succes">
+                <i class="bi bi-check-circle-fill"
+                    ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-check-circle-fill"
+                        viewBox="0 0 16 16"
+                        style="color: red"
+                    >
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                        /></svg
+                ></i>
+                <h1>Thanks for subscribing!</h1>
+                <p>
+                    A confirmation email has been sent to
+                    <b id="email-adress"></b>. Please open it and click the
+                    button inside to confirm your subscription
+                </p>
+            </div>
+            <button id="button_back">Dismis message</button>
+        </div>
+        <div class="container">
+            <form class="form">
+                <h1>Stay updated!</h1>
+                <p>Join 60,000+ pdroduct managers monthly updates on</p>
 
-        <ul>
-          <li>
-            <i class="bi bi-check-circle-fill"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-check-circle-fill"
-                viewBox="0 0 16 16"
-                style="color: red"
-              >
-                <path
-                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                /></svg
-            ></i>
-            Product discovery and building what matters
-          </li>
-          <li>
-            <i class="bi bi-check-circle-fill"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-check-circle-fill"
-                viewBox="0 0 16 16"
-                style="color: red"
-              >
-                <path
-                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                /></svg
-            ></i>
-            Measuring to ensure updates are a success
-          </li>
-          <li>
-            <i class="bi bi-check-circle-fill"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-check-circle-fill"
-                viewBox="0 0 16 16"
-                style="color: red"
-              >
-                <path
-                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
-                /></svg
-            ></i>
-            And much more
-          </li>
-        </ul>
+                <ul>
+                    <li>
+                        <i class="bi bi-check-circle-fill"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-check-circle-fill"
+                                viewBox="0 0 16 16"
+                                style="color: red"
+                            >
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                                /></svg
+                        ></i>
+                        Product discovery and building what matters
+                    </li>
+                    <li>
+                        <i class="bi bi-check-circle-fill"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-check-circle-fill"
+                                viewBox="0 0 16 16"
+                                style="color: red"
+                            >
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                                /></svg
+                        ></i>
+                        Measuring to ensure updates are a success
+                    </li>
+                    <li>
+                        <i class="bi bi-check-circle-fill"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-check-circle-fill"
+                                viewBox="0 0 16 16"
+                                style="color: red"
+                            >
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                                /></svg
+                        ></i>
+                        And much more
+                    </li>
+                </ul>
 
-        <label>
-          <div class="container_span">
-            <span>Email address</span> <span class="error"></span>
-          </div>
+                <label>
+                    <div class="container_span">
+                        <span>Email address</span> <span class="error"></span>
+                    </div>
 
-          <input name="email" id="email" class="email" />
-        </label>
+                    <input name="email" id="email" class="email" />
+                </label>
 
-        <button type="submit" class="submit">
-          Subscribe to monthly newsletter
-        </button>
-      </form>
-      <div class="image">
-        <img src="./assets/images/img2.jpg" alt="img" />
-      </div>
-    </div>
-  </body>
-  <script src="index.js"></script>
+                <button type="submit" class="submit">
+                    Subscribe to monthly newsletter
+                </button>
+            </form>
+            <div class="image">
+                <img src="./assets/images/img2.jpg" alt="img" />
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
 </html>
