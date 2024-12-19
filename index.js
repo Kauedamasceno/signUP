@@ -14,7 +14,7 @@ const validate = () => {
     let emailAdress
 
     if (!email.value || !email.value.includes("@")) {
-        errorEmail.textContent = "Validate email required"
+        errorEmail.textContent = "Insira um email válido"
         email.classList.remove("email")
         email.classList.add("email_error")
         isValid = false
